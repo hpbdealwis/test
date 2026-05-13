@@ -1,0 +1,1100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bridge Group — Connecting technology, talent, and healthcare</title>
+<meta name="description" content="Bridge Group connects technology, talent, and healthcare through specialized operating companies—built for execution at scale." />
+<meta name="theme-color" content="#0a1530" />
+<meta name="robots" content="index,follow" />
+<meta property="og:title" content="Bridge Group — Connecting technology, talent, and healthcare" />
+<meta property="og:description" content="Bridge Group connects technology, talent, and healthcare through specialized operating companies—built for execution at scale." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Bridge Group — Connecting technology, talent, and healthcare" />
+<meta name="twitter:description" content="Bridge Group connects technology, talent, and healthcare through specialized operating companies—built for execution at scale." />
+<link rel="icon" type="image/svg+xml" href="Assets/Bridge Group 2.svg" />
+<link rel="shortcut icon" href="Assets/Bridge Group 2.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --navy-1: #0a1530;
+    --navy-2: #11204a;
+    --navy-3: #1b2f63;
+    --blue-1: #2b4dd1;
+    --blue-2: #4a73f0;
+    --blue-soft: #e8eefc;
+    --gold-1: #c8a35a;
+    --gold-2: #e0c084;
+    --gold-soft: #f6efdf;
+    --ink: #0a1530;
+    --ink-2: #2a3354;
+    --muted: #6b7390;
+    --line: #e6e9f1;
+    --line-2: #eef0f6;
+    --bg: #ffffff;
+    --bg-tint: #f7f8fb;
+    --bg-warm: #fbfaf6;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: 'Geist', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 10px;
+    z-index: 1000;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: #fff;
+    color: var(--navy-1);
+    border: 1px solid var(--line);
+    box-shadow: 0 12px 30px rgba(10,21,48,0.12);
+  }
+  .skip-link:focus {
+    left: 16px;
+  }
+  :focus-visible {
+    outline: 2px solid var(--blue-2);
+    outline-offset: 3px;
+  }
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+  .serif { font-family: 'Newsreader', Georgia, serif; font-weight: 300; letter-spacing: -0.01em; }
+  .mono { font-family: 'Geist Mono', ui-monospace, monospace; }
+
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+  @media (max-width: 720px) { .container { padding: 0 20px; } }
+
+  /* ============ HEADER ============ */
+  .header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(255,255,255,0.82);
+    backdrop-filter: saturate(140%) blur(14px);
+    -webkit-backdrop-filter: saturate(140%) blur(14px);
+    border-bottom: 1px solid var(--line-2);
+  }
+  .header-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 72px;
+  }
+  .logo {
+    display: flex; align-items: center; gap: 10px;
+    font-family: 'Newsreader', serif;
+    font-size: 22px; font-weight: 400;
+    letter-spacing: -0.01em;
+    color: var(--navy-1);
+  }
+  .logo-mark {
+    width: 38px; height: 38px;
+    display: grid; place-items: center;
+  }
+  .logo-mark svg,
+  .logo-mark img { width: 100%; height: 100%; object-fit: contain; }
+
+  .nav { display: flex; align-items: center; gap: 36px; }
+  .nav-links { display: flex; gap: 28px; }
+  .nav-links a {
+    font-size: 14px; font-weight: 500;
+    color: var(--ink-2);
+    transition: color .2s ease;
+  }
+  .nav-links a:hover { color: var(--navy-1); }
+  @media (max-width: 860px) { .nav-links { display: none; } }
+
+  /* ============ BUTTONS ============ */
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 12px 20px;
+    font-size: 14px; font-weight: 500;
+    border-radius: 999px;
+    transition: all .2s ease;
+    white-space: nowrap;
+  }
+  .btn-primary {
+    background: var(--navy-1); color: #fff;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset, 0 6px 20px -8px rgba(10,21,48,0.45);
+  }
+  .btn-primary:hover {
+    background: var(--navy-2);
+    transform: translateY(-1px);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.15) inset, 0 12px 28px -10px rgba(10,21,48,0.55);
+  }
+  .btn-ghost {
+    background: transparent; color: var(--navy-1);
+    border: 1px solid var(--line);
+  }
+  .btn-ghost:hover { border-color: var(--navy-1); background: #fff; }
+  .btn-gold {
+    background: var(--gold-1); color: var(--navy-1);
+  }
+  .btn-gold:hover { background: var(--gold-2); transform: translateY(-1px); }
+  .btn-arrow { transition: transform .2s ease; }
+  .btn:hover .btn-arrow { transform: translate(2px, -2px); }
+
+  /* ============ HERO ============ */
+  .hero {
+    position: relative;
+    padding: 88px 0 96px;
+    overflow: hidden;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 72px;
+    align-items: center;
+  }
+  @media (max-width: 920px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+    .hero { padding: 56px 0 72px; }
+  }
+
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    padding: 6px 12px 6px 10px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: #fff;
+  }
+  .eyebrow .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--gold-1);
+    box-shadow: 0 0 0 3px rgba(200,163,90,0.18);
+  }
+
+  .hero h1 {
+    font-family: 'Newsreader', serif;
+    font-weight: 300;
+    font-size: clamp(40px, 5.4vw, 76px);
+    line-height: 1.04;
+    letter-spacing: -0.022em;
+    margin: 24px 0 24px;
+    color: var(--navy-1);
+    text-wrap: balance;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--blue-1);
+    font-weight: 300;
+  }
+  .hero p.lead {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--ink-2);
+    max-width: 540px;
+    margin: 0 0 36px;
+    text-wrap: pretty;
+  }
+  .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+
+  .hero-stats {
+    display: flex; gap: 40px;
+    margin-top: 56px;
+    padding-top: 32px;
+    border-top: 1px solid var(--line-2);
+  }
+  .hero-stat .v {
+    font-family: 'Newsreader', serif;
+    font-size: 32px; font-weight: 400;
+    color: var(--navy-1);
+    letter-spacing: -0.02em;
+  }
+  .hero-stat .l {
+    font-size: 12px;
+    color: var(--muted);
+    font-family: 'Geist Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 4px;
+  }
+
+  /* Hero visual — bridge motif */
+  .hero-visual {
+    position: relative;
+    aspect-ratio: 1 / 1.05;
+    border-radius: 24px;
+    background:
+      radial-gradient(120% 80% at 100% 0%, rgba(200,163,90,0.18), transparent 55%),
+      linear-gradient(160deg, var(--navy-1) 0%, var(--navy-2) 60%, var(--navy-3) 100%);
+    overflow: hidden;
+    box-shadow: 0 30px 60px -20px rgba(10,21,48,0.35);
+  }
+  .hero-visual::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(80% 60% at 50% 40%, #000 30%, transparent 80%);
+  }
+  .bridge-svg {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+  }
+  .visual-meta {
+    position: absolute;
+    left: 24px; right: 24px; bottom: 24px;
+    display: flex; justify-content: space-between; align-items: end;
+    color: rgba(255,255,255,0.7);
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .visual-meta .label { color: var(--gold-2); }
+  .visual-tag {
+    position: absolute;
+    top: 24px; left: 24px;
+    display: inline-flex; align-items: center; gap: 8px;
+    color: rgba(255,255,255,0.85);
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 999px;
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(6px);
+  }
+  .visual-tag .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold-2); }
+
+  /* ============ SECTION SCAFFOLD ============ */
+  .section { padding: 120px 0; }
+  @media (max-width: 720px) { .section { padding: 80px 0; } }
+
+  .section-head {
+    display: flex; justify-content: space-between; align-items: end;
+    margin-bottom: 56px;
+    gap: 32px;
+  }
+  @media (max-width: 720px) {
+    .section-head { flex-direction: column; align-items: start; margin-bottom: 40px; }
+  }
+  .section-eyebrow {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    margin-bottom: 16px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .section-eyebrow::before {
+    content: ""; width: 24px; height: 1px; background: var(--gold-1);
+  }
+  .section-title {
+    font-family: 'Newsreader', serif;
+    font-weight: 300;
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    color: var(--navy-1);
+    margin: 0;
+    max-width: 720px;
+    text-wrap: balance;
+  }
+  .section-title em { font-style: italic; color: var(--blue-1); }
+  .section-sub {
+    color: var(--muted);
+    max-width: 380px;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* ============ SUBSIDIARY CARDS ============ */
+  .companies { background: var(--bg-tint); }
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  @media (max-width: 980px) { .cards-grid { grid-template-columns: 1fr; } }
+
+  .company-card {
+    position: relative;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 32px;
+    display: flex; flex-direction: column;
+    min-height: 520px;
+    transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease, border-color .35s ease;
+    overflow: hidden;
+  }
+  .company-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 48px -24px rgba(10,21,48,0.25);
+    border-color: var(--line-2);
+  }
+  .company-card .index {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.12em;
+    margin-bottom: 24px;
+    display: flex; justify-content: space-between;
+  }
+  .company-icon-wrap {
+    height: 180px;
+    border-radius: 14px;
+    margin-bottom: 28px;
+    position: relative;
+    overflow: hidden;
+    display: grid; place-items: center;
+  }
+  .company-logo {
+    width: min(88%, 300px);
+    max-height: 140px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+  .company-card h3 {
+    font-family: 'Newsreader', serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0 0 12px;
+    color: var(--navy-1);
+    letter-spacing: -0.015em;
+  }
+  .company-card p {
+    color: var(--ink-2);
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin: 0 0 28px;
+    flex: 1;
+  }
+  .company-card .visit {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 14px; font-weight: 500;
+    color: var(--navy-1);
+    padding-top: 20px;
+    border-top: 1px solid var(--line-2);
+    transition: gap .2s ease;
+  }
+  .company-card:hover .visit { gap: 14px; }
+  .company-card .visit-arrow {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: var(--navy-1);
+    display: grid; place-items: center;
+    color: #fff;
+    transition: background .2s ease;
+  }
+
+  /* Tech card */
+  .card-tech .company-icon-wrap {
+    background:
+      radial-gradient(80% 100% at 50% 100%, rgba(74,115,240,0.18), transparent 70%),
+      linear-gradient(135deg, #eef2fc 0%, #e2e9fa 100%);
+  }
+  .card-tech .visit-arrow { background: var(--blue-1); }
+
+  /* Talent card */
+  .card-talent .company-icon-wrap {
+    background:
+      radial-gradient(80% 100% at 50% 100%, rgba(200,163,90,0.22), transparent 70%),
+      linear-gradient(135deg, #faf5e8 0%, #f3e8c9 100%);
+  }
+  .card-talent .visit-arrow { background: var(--gold-1); color: var(--navy-1); }
+
+  /* Health card */
+  .card-health .company-icon-wrap {
+    background:
+      radial-gradient(80% 100% at 50% 100%, rgba(10,21,48,0.18), transparent 70%),
+      linear-gradient(135deg, #e8eef0 0%, #d6e2e6 100%);
+  }
+  .card-health .visit-arrow { background: #2a5d5f; }
+
+  .icon-art { width: 100%; height: 100%; }
+
+  /* ============ ABOUT ============ */
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 80px; align-items: start;
+  }
+  @media (max-width: 920px) { .about-grid { grid-template-columns: 1fr; gap: 32px; } }
+  .about-body {
+    font-size: 18px;
+    line-height: 1.65;
+    color: var(--ink-2);
+    text-wrap: pretty;
+  }
+  .about-body p + p { margin-top: 20px; }
+  .about-pillars {
+    display: grid; gap: 0;
+    border-top: 1px solid var(--line);
+  }
+  .about-pillars .pillar {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--line);
+    gap: 24px;
+    align-items: baseline;
+  }
+  .about-pillars .pillar .num {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.12em;
+  }
+  .about-pillars .pillar .label {
+    font-family: 'Newsreader', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--navy-1);
+  }
+  .about-pillars .pillar .desc {
+    grid-column: 2;
+    font-size: 14px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  /* ============ WHY ============ */
+  .why { background: var(--navy-1); color: #fff; }
+  .why .section-title { color: #fff; }
+  .why .section-title em { color: var(--gold-2); }
+  .why .section-eyebrow { color: rgba(255,255,255,0.6); }
+  .why .section-eyebrow::before { background: var(--gold-1); }
+  .why .section-sub { color: rgba(255,255,255,0.6); }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border-top: 1px solid rgba(255,255,255,0.12);
+  }
+  @media (max-width: 980px) { .features-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .features-grid { grid-template-columns: 1fr; } }
+
+  .feature {
+    padding: 36px 28px 36px 0;
+    border-right: 1px solid rgba(255,255,255,0.12);
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    position: relative;
+    transition: background .25s ease;
+  }
+  .feature:last-child { border-right: none; }
+  @media (max-width: 980px) {
+    .feature:nth-child(2n) { border-right: none; }
+    .feature { padding: 32px 24px 32px 0; }
+  }
+  @media (max-width: 600px) { .feature { border-right: none; } }
+
+  .feature .num {
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    color: var(--gold-2);
+    letter-spacing: 0.14em;
+    margin-bottom: 24px;
+  }
+  .feature .icon {
+    width: 36px; height: 36px;
+    margin-bottom: 24px;
+    color: var(--gold-2);
+  }
+  .feature h4 {
+    font-family: 'Newsreader', serif;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0 0 10px;
+    color: #fff;
+    letter-spacing: -0.01em;
+  }
+  .feature p {
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  /* ============ CTA ============ */
+  .cta { padding: 140px 0; position: relative; overflow: hidden; }
+  @media (max-width: 720px) { .cta { padding: 96px 0; } }
+  .cta-inner {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  .cta h2 {
+    font-family: 'Newsreader', serif;
+    font-weight: 300;
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: var(--navy-1);
+    margin: 0 0 20px;
+    text-wrap: balance;
+  }
+  .cta h2 em { font-style: italic; color: var(--blue-1); }
+  .cta p {
+    color: var(--ink-2);
+    font-size: 18px;
+    margin: 0 0 36px;
+    line-height: 1.6;
+  }
+  .cta-ctas { display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+  .cta-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(50% 80% at 50% 100%, rgba(200,163,90,0.10), transparent 70%),
+      radial-gradient(60% 80% at 50% 0%, rgba(43,77,209,0.06), transparent 70%);
+    pointer-events: none;
+  }
+
+  /* ============ FOOTER ============ */
+  .footer {
+    background: var(--navy-1);
+    color: rgba(255,255,255,0.7);
+    padding: 80px 0 32px;
+  }
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 48px;
+    padding-bottom: 56px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  @media (max-width: 860px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; } }
+  @media (max-width: 540px) { .footer-top { grid-template-columns: 1fr; } }
+
+  .footer-brand .logo { color: #fff; }
+  .footer-tag {
+    margin-top: 14px;
+    font-family: 'Geist Mono', monospace;
+    font-size: 12px;
+    color: var(--gold-2);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .footer-tag span { color: rgba(255,255,255,0.3); margin: 0 8px; }
+  .footer-blurb {
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 320px;
+    color: rgba(255,255,255,0.6);
+  }
+  .footer h5 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: rgba(255,255,255,0.5);
+    margin: 0 0 18px;
+    font-family: 'Geist Mono', monospace;
+    font-weight: 500;
+  }
+  .footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .footer ul a {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    transition: color .2s ease;
+  }
+  .footer ul a:hover { color: var(--gold-2); }
+
+  .footer-bottom {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 32px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    font-family: 'Geist Mono', monospace;
+    letter-spacing: 0.04em;
+  }
+  @media (max-width: 600px) { .footer-bottom { flex-direction: column; gap: 12px; } }
+
+  /* ============ EFFECTS ============ */
+  .reveal { opacity: 0; transform: translateY(20px); transition: opacity .8s ease, transform .8s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+    .marquee-track { animation: none; }
+  }
+
+  .marquee {
+    border-top: 1px solid var(--line-2);
+    border-bottom: 1px solid var(--line-2);
+    overflow: hidden;
+    padding: 22px 0;
+    background: #fff;
+  }
+  .marquee-track {
+    display: flex; gap: 56px;
+    animation: marquee 40s linear infinite;
+    white-space: nowrap;
+  }
+  .marquee-track > span {
+    font-family: 'Geist Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+    display: inline-flex; align-items: center; gap: 56px;
+  }
+  .marquee-track > span::after {
+    content: "✦"; color: var(--gold-1);
+  }
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<noscript>
+  <style>
+    .reveal { opacity: 1 !important; transform: none !important; }
+  </style>
+</noscript>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-inner">
+    <a class="logo" href="#home">
+      <span class="logo-mark">
+        <img src="Assets/Bridge Group 2.svg" alt="Bridge Group logo">
+      </span>
+      Bridge Group
+    </a>
+    <nav class="nav">
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#companies">Companies</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="btn btn-primary" href="#companies">
+        Explore Our Companies
+        <svg class="btn-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <path d="M3 9 L9 3 M5 3 H9 V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="dot"></span> Global business &amp; technology group</span>
+      <h1>Building the bridge between innovation, people, and <em>global business growth.</em></h1>
+      <p class="lead">Bridge Group brings together specialized companies in technology, talent solutions, and healthcare services to help organizations grow faster, operate smarter, and scale globally.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#companies">
+          Explore Our Companies
+          <svg class="btn-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M3 9 L9 3 M5 3 H9 V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <a class="btn btn-ghost" href="#contact">
+          Contact Us
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="v">3</div><div class="l">Subsidiaries</div></div>
+        <div class="hero-stat"><div class="v">2</div><div class="l">Continents</div></div>
+        <div class="hero-stat"><div class="v">1</div><div class="l">Connected group</div></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <span class="visual-tag"><span class="dot"></span> Bridge Group · Est.</span>
+      <svg class="bridge-svg" viewBox="0 0 600 630" preserveAspectRatio="xMidYMid meet" fill="none">
+        <!-- Suspension cables -->
+        <defs>
+          <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#c8a35a" stop-opacity="0.4"/>
+            <stop offset="50%" stop-color="#e0c084" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#c8a35a" stop-opacity="0.4"/>
+          </linearGradient>
+          <linearGradient id="cableGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="rgba(255,255,255,0.05)"/>
+            <stop offset="50%" stop-color="rgba(224,192,132,0.6)"/>
+            <stop offset="100%" stop-color="rgba(255,255,255,0.05)"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Main arch cable -->
+        <path d="M 40 460 Q 300 180, 560 460" stroke="url(#cableGrad)" stroke-width="2" fill="none"/>
+        <path d="M 40 480 Q 300 220, 560 480" stroke="url(#cableGrad)" stroke-width="1" fill="none" opacity="0.5"/>
+
+        <!-- Vertical suspension lines -->
+        <g stroke="rgba(224,192,132,0.35)" stroke-width="1">
+          <line x1="100" y1="400" x2="100" y2="500"/>
+          <line x1="160" y1="350" x2="160" y2="500"/>
+          <line x1="220" y1="300" x2="220" y2="500"/>
+          <line x1="280" y1="270" x2="280" y2="500"/>
+          <line x1="320" y1="270" x2="320" y2="500"/>
+          <line x1="380" y1="290" x2="380" y2="500"/>
+          <line x1="440" y1="335" x2="440" y2="500"/>
+          <line x1="500" y1="395" x2="500" y2="500"/>
+        </g>
+
+        <!-- Deck (the bridge platform) -->
+        <line x1="20" y1="500" x2="580" y2="500" stroke="url(#goldGrad)" stroke-width="2"/>
+        <line x1="20" y1="510" x2="580" y2="510" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+
+        <!-- Three pillar nodes representing subsidiaries -->
+        <g>
+          <circle cx="180" cy="500" r="6" fill="#4a73f0"/>
+          <circle cx="180" cy="500" r="14" fill="none" stroke="#4a73f0" stroke-opacity="0.3" stroke-width="1"/>
+          <text x="180" y="540" text-anchor="middle" font-family="Geist Mono, monospace" font-size="10" fill="rgba(255,255,255,0.7)" letter-spacing="2">TECH</text>
+        </g>
+        <g>
+          <circle cx="300" cy="500" r="6" fill="#e0c084"/>
+          <circle cx="300" cy="500" r="14" fill="none" stroke="#e0c084" stroke-opacity="0.3" stroke-width="1"/>
+          <text x="300" y="540" text-anchor="middle" font-family="Geist Mono, monospace" font-size="10" fill="rgba(255,255,255,0.7)" letter-spacing="2">TALENT</text>
+        </g>
+        <g>
+          <circle cx="420" cy="500" r="6" fill="#7fb3a8"/>
+          <circle cx="420" cy="500" r="14" fill="none" stroke="#7fb3a8" stroke-opacity="0.3" stroke-width="1"/>
+          <text x="420" y="540" text-anchor="middle" font-family="Geist Mono, monospace" font-size="10" fill="rgba(255,255,255,0.7)" letter-spacing="2">HEALTH</text>
+        </g>
+
+        <!-- Location markers (kept above caption to avoid overlap) -->
+        <text x="40" y="570" font-family="Geist Mono, monospace" font-size="10" fill="rgba(255,255,255,0.45)" letter-spacing="2">USA</text>
+        <text x="540" y="570" text-anchor="end" font-family="Geist Mono, monospace" font-size="10" fill="rgba(255,255,255,0.45)" letter-spacing="2">SRI LANKA</text>
+
+      </svg>
+      <div class="visual-meta">
+        <span>The Bridge</span>
+        <span>One group · Three paths</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Software &amp; AI</span>
+    <span>Recruitment &amp; Workforce</span>
+    <span>Healthcare &amp; Life Sciences</span>
+    <span>Cloud &amp; Automation</span>
+    <span>Offshore Delivery</span>
+    <span>Pharmaceutical Manufacturing</span>
+    <span>Digital Transformation</span>
+    <span>Software &amp; AI</span>
+    <span>Recruitment &amp; Workforce</span>
+    <span>Healthcare &amp; Life Sciences</span>
+    <span>Cloud &amp; Automation</span>
+    <span>Offshore Delivery</span>
+    <span>Pharmaceutical Manufacturing</span>
+    <span>Digital Transformation</span>
+  </div>
+</div>
+
+<!-- COMPANIES -->
+<section class="section companies" id="companies">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-eyebrow">02 — Our Companies</div>
+        <h2 class="section-title">Three specialized companies, <em>one connected vision.</em></h2>
+      </div>
+      <p class="section-sub">Each subsidiary is an operator in its field — together they form an end-to-end partner for organizations scaling globally.</p>
+    </div>
+
+    <div class="cards-grid">
+
+      <!-- Bridge Tech -->
+      <a class="company-card card-tech reveal" href="https://bridgebsstech.com/" target="_blank" rel="noopener noreferrer">
+        <div class="index"><span>01 / Tech</span><span>↗ visit</span></div>
+        <div class="company-icon-wrap">
+          <img class="company-logo" src="Assets/Bridge Tech 1.svg" alt="Bridge Tech logo">
+        </div>
+        <h3>Bridge Tech</h3>
+        <p>Custom software development, AI-powered solutions, cloud systems, automation platforms, and digital transformation services for growing businesses.</p>
+        <div class="visit">
+          <span class="visit-arrow">
+            <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+              <path d="M3 9 L9 3 M5 3 H9 V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </span>
+          Visit Bridge Tech
+        </div>
+      </a>
+
+      <!-- Bridge Talent -->
+      <a class="company-card card-talent reveal" href="https://bridgebsstalent.com/" target="_blank" rel="noopener noreferrer">
+        <div class="index"><span>02 / Talent</span><span>↗ visit</span></div>
+        <div class="company-icon-wrap">
+          <img class="company-logo" src="Assets/Bridge Talent.svg" alt="Bridge Talent logo">
+        </div>
+        <h3>Bridge Talent</h3>
+        <p>Recruitment, staffing, IT talent sourcing, workforce solutions, and offshore team support for companies looking to scale with the right people.</p>
+        <div class="visit">
+          <span class="visit-arrow">
+            <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+              <path d="M3 9 L9 3 M5 3 H9 V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </span>
+          Visit Bridge Talent
+        </div>
+      </a>
+
+      <!-- Bridge Health -->
+      <a class="company-card card-health reveal" href="https://www.bridgebsshealth.com/" target="_blank" rel="noopener noreferrer">
+        <div class="index"><span>03 / Health</span><span>↗ visit</span></div>
+        <div class="company-icon-wrap">
+          <img class="company-logo" src="Assets/Bridge Health 1.svg" alt="Bridge Health logo">
+        </div>
+        <h3>Bridge Health</h3>
+        <p>Project execution, healthcare technology, pharmaceutical manufacturing support, operational planning, and life sciences consulting.</p>
+        <div class="visit">
+          <span class="visit-arrow">
+            <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+              <path d="M3 9 L9 3 M5 3 H9 V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </span>
+          Visit Bridge Health
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="section-eyebrow">03 — About</div>
+        <h2 class="section-title">One group. <em>Three specialized paths.</em></h2>
+      </div>
+      <div class="reveal">
+        <div class="about-body">
+          <p>Bridge Group was created to connect business needs with practical execution. Through our subsidiaries, we support companies with technology, talent, and healthcare-focused solutions while maintaining shared values of speed, transparency, quality, and long-term partnership.</p>
+        </div>
+        <div class="about-pillars" style="margin-top: 40px;">
+          <div class="pillar">
+            <span class="num">01</span>
+            <span class="label">Speed</span>
+            <span class="desc">Decisions and delivery measured in days, not quarters.</span>
+          </div>
+          <div class="pillar">
+            <span class="num">02</span>
+            <span class="label">Transparency</span>
+            <span class="desc">Direct communication and honest scoping, every engagement.</span>
+          </div>
+          <div class="pillar">
+            <span class="num">03</span>
+            <span class="label">Quality</span>
+            <span class="desc">Specialist teams, not generalists. Depth over surface.</span>
+          </div>
+          <div class="pillar">
+            <span class="num">04</span>
+            <span class="label">Partnership</span>
+            <span class="desc">Built for the long term. We invest in the relationship.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section why">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-eyebrow">04 — Why Bridge Group</div>
+        <h2 class="section-title">An operator's group, built for <em>execution at scale.</em></h2>
+      </div>
+      <p class="section-sub">Four reasons clients, partners, and investors choose to work with us across geographies and industries.</p>
+    </div>
+
+    <div class="features-grid reveal">
+      <div class="feature">
+        <div class="num">01</div>
+        <svg class="icon" viewBox="0 0 36 36" fill="none">
+          <circle cx="18" cy="18" r="14" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M4 18 H32 M18 4 Q 28 18, 18 32 M18 4 Q 8 18, 18 32" stroke="currentColor" stroke-width="1.4" fill="none"/>
+        </svg>
+        <h4>Global execution capability</h4>
+        <p>Distributed teams in the US and Sri Lanka, delivering across time zones and regions.</p>
+      </div>
+      <div class="feature">
+        <div class="num">02</div>
+        <svg class="icon" viewBox="0 0 36 36" fill="none">
+          <path d="M6 24 L 14 16 L 20 22 L 30 12" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M24 12 H30 V18" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          <line x1="6" y1="30" x2="30" y2="30" stroke="currentColor" stroke-width="1.4"/>
+        </svg>
+        <h4>Cost-effective delivery</h4>
+        <p>Onshore strategy paired with offshore execution — without compromising quality.</p>
+      </div>
+      <div class="feature">
+        <div class="num">03</div>
+        <svg class="icon" viewBox="0 0 36 36" fill="none">
+          <rect x="6" y="10" width="24" height="20" rx="2" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M14 10 V6 H22 V10" stroke="currentColor" stroke-width="1.4" fill="none"/>
+          <line x1="6" y1="20" x2="30" y2="20" stroke="currentColor" stroke-width="1.4"/>
+          <circle cx="18" cy="20" r="2" fill="currentColor"/>
+        </svg>
+        <h4>Specialized industry focus</h4>
+        <p>Three deeply-focused operating companies — not a single generalist consultancy.</p>
+      </div>
+      <div class="feature">
+        <div class="num">04</div>
+        <svg class="icon" viewBox="0 0 36 36" fill="none">
+          <path d="M6 14 H22 L26 18 L22 22 H6 Z" stroke="currentColor" stroke-width="1.4" fill="none"/>
+          <circle cx="28" cy="10" r="3" stroke="currentColor" stroke-width="1.4"/>
+          <line x1="6" y1="28" x2="22" y2="28" stroke="currentColor" stroke-width="1.4"/>
+        </svg>
+        <h4>Transparent communication</h4>
+        <p>Clear scopes, weekly updates, and direct access to senior leadership.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="cta-bg"></div>
+  <div class="container">
+    <div class="cta-inner reveal">
+      <div class="section-eyebrow" style="justify-content:center; display:inline-flex;">05 — Get in touch</div>
+      <h2>Looking for the right <em>Bridge company?</em></h2>
+      <p>Explore our subsidiaries or contact us to find the right solution for your business.</p>
+      <div class="cta-ctas">
+        <a class="btn btn-primary" href="#companies">
+          Explore Companies
+          <svg class="btn-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M3 9 L9 3 M5 3 H9 V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <a class="btn btn-gold" href="contact.html">
+          Contact Bridge Group
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+ </main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="logo" href="#home" style="color:#fff;">
+          <span class="logo-mark">
+            <img src="Assets/Bridge Group 2.svg" alt="Bridge Group logo">
+          </span>
+          Bridge Group
+        </a>
+        <div class="footer-tag">Technology <span>·</span> Talent <span>·</span> Health</div>
+        <p class="footer-blurb">A global business and technology group connecting innovation, talent, and healthcare solutions through one bridge.</p>
+      </div>
+
+      <div>
+        <h5>Companies</h5>
+        <ul>
+          <li><a href="https://bridgebsstech.com/" target="_blank" rel="noopener noreferrer">Bridge Tech</a></li>
+          <li><a href="https://bridgebsstalent.com/" target="_blank" rel="noopener noreferrer">Bridge Talent</a></li>
+          <li><a href="https://www.bridgebsshealth.com/" target="_blank" rel="noopener noreferrer">Bridge Health</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Group</h5>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" data-placeholder="careers">Careers</a></li>
+          <li><a href="#" data-placeholder="press">Press</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Get in touch</h5>
+        <ul>
+          <li><a href="mailto:info@bridgebss.com">info@bridgebss.com</a></li>
+          <li><span style="color:rgba(255,255,255,0.5);">USA · Sri Lanka</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Bridge Group. All rights reserved.</span>
+      <span>Connecting tech, talent &amp; healthcare</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const prefersReducedMotion = window.matchMedia
+    ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    : false;
+
+  // Prevent placeholder links from jumping to the top until you replace them.
+  document.querySelectorAll('a[data-placeholder]').forEach(a => {
+    a.addEventListener('click', (e) => e.preventDefault());
+  });
+
+  // Reveal on scroll (guard against missing IntersectionObserver)
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      }
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  } else {
+    // If we can't animate, show everything.
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+  }
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const id = a.getAttribute('href');
+      if (id && id.length > 1) {
+        const t = document.querySelector(id);
+        if (t) {
+          e.preventDefault();
+          const top = t.getBoundingClientRect().top + window.scrollY - 64;
+          window.scrollTo({ top, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+        }
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

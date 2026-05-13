@@ -89,12 +89,27 @@
 
       <main class="embedWrap">
         <iframe
+          id="mondayForm"
           class="embed"
-          src="https://forms.monday.com/forms/embed/cc09cdce135bf1200de925f2934fe076?r=apse2"
           title="Contact form"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+        <script>
+          // Parse the current page URL query string (works on GitHub Pages and static hosting).
+          const params = new URLSearchParams(window.location.search);
+
+          // Read lead_source from URL, or use default when missing/empty.
+          const leadSource = params.get("lead_source") || "GitHub Pages Website";
+
+          // Build monday.com embed URL with encoded lead source for safe query transmission.
+          const mondayFormUrl =
+            "https://forms.monday.com/forms/embed/cc09cdce135bf1200de925f2934fe076?r=apse2&lead_source=" +
+            encodeURIComponent(leadSource);
+
+          // Set the iframe source dynamically so monday CRM receives the lead source value.
+          document.getElementById("mondayForm").src = mondayFormUrl;
+        </script>
       </main>
     </div>
   </body>

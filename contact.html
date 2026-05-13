@@ -1,1 +1,101 @@
-<iframe src="https://forms.monday.com/forms/embed/cc09cdce135bf1200de925f2934fe076?r=apse2" width="650" height="500" style="border: 0; box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);"></iframe>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact</title>
+    <style>
+      :root {
+        --page-bg: #0b1220;
+        --page-fg: #eaf0ff;
+        --muted: rgba(234, 240, 255, 0.75);
+        --hairline: rgba(234, 240, 255, 0.12);
+        --header-h: 76px;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        background: radial-gradient(1200px 600px at 20% 0%, rgba(120, 130, 255, 0.28), transparent 60%),
+          radial-gradient(900px 500px at 90% 20%, rgba(0, 220, 190, 0.18), transparent 55%),
+          var(--page-bg);
+        color: var(--page-fg);
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+          "Segoe UI Emoji";
+      }
+
+      .page {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        height: var(--header-h);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 clamp(16px, 3vw, 32px);
+        border-bottom: 1px solid var(--hairline);
+        backdrop-filter: blur(10px);
+        background: linear-gradient(to bottom, rgba(11, 18, 32, 0.72), rgba(11, 18, 32, 0.4));
+      }
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        line-height: 1.15;
+      }
+
+      .title h1 {
+        margin: 0;
+        font-size: 18px;
+        letter-spacing: 0.2px;
+      }
+
+      .title p {
+        margin: 0;
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      .embedWrap {
+        flex: 1;
+        min-height: 0;
+      }
+
+      .embed {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="title">
+          <h1>Tell us what you’re looking for</h1>
+          <p>We’ll respond within one business day. No pitch, no pressure.</p>
+        </div>
+      </header>
+
+      <main class="embedWrap">
+        <iframe
+          class="embed"
+          src="https://forms.monday.com/forms/embed/cc09cdce135bf1200de925f2934fe076?r=apse2"
+          title="Contact form"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </main>
+    </div>
+  </body>
+</html>
